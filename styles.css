@@ -1,0 +1,185 @@
+/* Add these styles to styles.css */
+
+body {
+    font-family: "Outfit", sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-image: url("https://miro.medium.com/v2/resize:fit:1400/1*5lyavS59mazOFnb55Z6znQ.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+.movie-card {
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.movie-card img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.seat-grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 5px;
+}
+
+.seat {
+    width: 30px;
+    height: 30px;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.selected-seat {
+    background-color: green;
+}
+
+.seat-list-container {
+    margin-top: 20px;
+}
+
+#seat-list {
+    list-style: none;
+    padding: 0;
+}
+
+#seat-list li {
+    margin-bottom: 10px;
+}
+
+#seat-list li input {
+    margin-left: 10px;
+}
+
+#message-container {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+}
+
+.message {
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0.9;
+    margin-bottom: 10px;
+}
+
+.success {
+    background-color: #4caf50; /* Green */
+}
+
+.error {
+    background-color: #f44336; /* Red */
+}
+/* styles.css */
+
+/* ... (previous styles) */
+
+.cast-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.cast-card {
+    width: 185px;
+    margin: 10px;
+    text-align: center;
+}
+
+.cast-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+.movie-card {
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Add smooth transition effect for background color */
+    box-shadow: 5px 5px 5px black;
+    color: white;
+    text-shadow: 3px 3px 3px black;
+}
+
+.movie-card:hover {
+    background-color: #a1e752; /* Change the background color on hover */
+}
+h1{
+    color: white;
+    text-shadow: 5px 5px 5px black;
+    font-size: 80px;
+}
+.two{
+    font-size: 50px;
+}
+#movie-description {
+    color: white;
+    font-size: 25px;
+    text-shadow: 5px 5px 5px black;
+    transition: background-color 0.3s ease-in-out;
+}
+#movie-rating{
+    color: white;
+    font-size: 25px;
+    text-shadow: 5px 5px 5px black;
+    transition: background-color 0.3s ease-in-out;
+}
+#movie-description:hover,
+#movie-rating:hover {
+    background-color: rgba(255, 255, 255, 0.5); /* Transparent white hover effect */
+}
+#cast-container{
+    color: white;
+    font-size: 25px;
+    text-shadow: 5px 5px 5px black;
+}
+.cast-card {
+    transition: background-color 0.3s ease-in-out;
+}
+
+.cast-card:hover {
+    background-color: rgba(255, 255, 255, 0.5); /* Transparent white hover effect */
+}
+#select-seats-btn {
+    background-color: white;
+    color: black; /* Change text color to black or the desired color */
+    border: 2px solid black; /* Add a border for better visibility */
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    font-size: 30px;
+}
+
+#select-seats-btn:hover {
+    background-color: #4caf50; /* Green hover effect */
+    color: white; /* Change text color on hover */
+    border-color: #4caf50; /* Change border color on hover */
+}
